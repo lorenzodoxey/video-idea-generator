@@ -1,0 +1,33 @@
+/* App.css */
+
+/*
+  Remove most of the original App.css styles.
+  KaiAdmin theme provides the styling for buttons, cards, inputs, etc.
+  Keep only essential layout adjustments or overrides here.
+*/
+
+.App {
+  /* This class might not be strictly needed with KaiAdmin's wrapper,
+     but if you need any global text alignment, it can go here. */
+  text-align: center;
+}
+
+/* KaiAdmin's script line styling, adjust as needed */
+.script-line-kai {
+  font-family: 'Inter', sans-serif; /* Using a common font, or KaiAdmin's default */
+  font-size: 1rem;
+  margin: 5px 0;
+  white-space: pre-wrap;
+  color: #c9d1d9; /* Light grey for text in dark background */
+}
+
+/* Modal specific styles for React's manual control */
+.modal.fade.show.d-block {
+  display: block; /* Override default Bootstrap .fade visibility */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent backdrop */
+  z-index: 1050; /* Ensure it's above other elements */
+}
+
+.modal-dialog {
+  margin-top: 50px; /* Adjust modal vertical position */
+}
